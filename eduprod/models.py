@@ -8,3 +8,5 @@ class Question(models.Model):
 
     def __str__(self):
         return self.question_text
+        # In your Django app's models.py file
+from django.db import models

@@ -4,6 +4,7 @@ document.addEventListener("DOMContentLoaded", function() {
     const content = document.getElementById('content');
     const btn = document.getElementById('revealBtn');
 
+
     function displayQuestion() {
         if (currentQuestionIndex < questions.length) {
             const question = questions[currentQuestionIndex].fields.question_text;
@@ -26,6 +27,5 @@ document.addEventListener("DOMContentLoaded", function() {
         } else {
             currentQuestionIndex++;
             displayQuestion();
-        }
-    });
+    }});
 });
