@@ -5,10 +5,11 @@ document.addEventListener("DOMContentLoaded", function() {
     const btn = document.getElementById('revealBtn');
 
 
-    function displayQuestion() {
-        if (currentQuestionIndex < questions.length) {
+   function displayQuestion() {
+       if (currentQuestionIndex < questions.length) {
             const question = questions[currentQuestionIndex].fields.question_text;
             const answer = questions[currentQuestionIndex].fields.answer_text;
+            content.innerHTML = `<div class='question'>Question: ${question}</div><div class='answer' style='display: none;'>Answer: ${answer}</div>`;
             content.innerHTML = `<div class='question'>Question: ${question}</div><div class='answer' style='display: none;'>Answer: ${answer}</div>`;
             btn.textContent = "Reveal Answer";
         } else {
@@ -17,15 +18,15 @@ document.addEventListener("DOMContentLoaded", function() {
         }
     }
 
-    displayQuestion();
+   displayQuestion();
 
-    btn.addEventListener("click", function() {
-        const answerElement = content.querySelector('.answer');
-        if (btn.textContent === "Reveal Answer") {
-            answerElement.style.display = "block";
-            btn.textContent = "Next Question";
-        } else {
-            currentQuestionIndex++;
-            displayQuestion();
-    }});
+   btn.addEventListener("click", function() {
+       const answerElement = content.querySelector('.answer');
+       if (btn.textContent === "Reveal Answer") {
+           answerElement.style.display = "block";
+           btn.textContent = "Next Question";
+       } else {
+           currentQuestionIndex++;
+           displayQuestion();
+   }});
 });

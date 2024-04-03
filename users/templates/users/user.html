@@ -1,6 +1,14 @@
 {% extends "users/layout.html" %}
 {% block body %}
-    <h1>Welcome, {{ request.user.first_name }}</h1>
     <p>Username: {{ request.user.username }}</p>
-    <a href="{% url 'eduprod:index' %}">Take the Quiz</a>
+    <!-- Splash Page -->
+<div id="splashPage" class="container show">
+    <h2>Welcome to your Quizzes!</h2>
+    <p>Select "True or False" to get a quiz with only true or false questions, 
+        "Written Answers" for a quiz with written questions or 
+        "Both" to have a quiz with both true or false and written questions.</p>
+</div>
+<a href="{% url 'eduprod:index' %}">True or False</a><br>
+<a href="{% url 'eduprod:index' %}">Written Answers</a><br>
+<a href="{% url 'eduprod:index' %}">Both</a>
 {% endblock %}

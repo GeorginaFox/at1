@@ -1,11 +1,6 @@
 {% load static %}
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <title>Q&A</title>
-    <link href="{% static 'users/styles.css' %}" rel="stylesheet">
-    <script src="{% static 'eduprod/quiz.js' %}" defer></script>
-</head>
 <body>
     <div class="header">
         <div class="logo">
@@ -18,6 +13,10 @@
                 <button type="submit">Log out</button>
             </form>
         </div>
+        <!-- True or False quiz -->
+        <title>True or False Quiz</title>
+        <link href="{% static 'users/styles.css' %}" rel="stylesheet">
+        <script src="{% static 'eduprod/quiz.js' %}" defer></script>
     </div>   
     {% if messages %}
         <ul class="messages">
@@ -29,4 +28,35 @@
     {% block body %}
     {% endblock %}
 </body>
+
+<!-- Question Management Section -->
+<!--<div id="form-container" class="container">
+  <form id="addFlashcardForm">
+    <h2>Add a New Flashcard</h2>
+    <label for="question">Question:</label>
+    <input type="text" id="question" required><br>
+    <label for="answer">Answer:</label>
+    <input type="text" id="answer" required><br>
+    <button type="button" onclick="addFlashcard()">Add Flashcard</button>
+    <button type="button" onclick="resetFlashcards()">Reset Flashcards</button>
+  </form>
+</div>
+<nav>
+    <a href="#" onclick="showSection('splashPage')">Home</a>
+    <a href="#" onclick="showSection('flashcard-container')">Revise</a>
+    <a href="#" onclick="showSection('form-container')">Questions</a>
+</nav>
+<script>
+function showSection(sectionId) {
+    // Hide all sections
+    document.querySelectorAll('.container').forEach(section => {
+        section.classList.remove('show');
+        section.classList.add('hidden');
+    });
+    
+    // Show the selected section
+    document.getElementById(sectionId).classList.remove('hidden');
+    document.getElementById(sectionId).classList.add('show');
+    }
+</script>-->
 </html>
