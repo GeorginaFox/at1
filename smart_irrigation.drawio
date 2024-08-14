@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2024-08-14T04:46:41.526Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36" etag="UGtpLZVy-ns10oSyrR7X" version="24.6.3" type="github">
+<mxfile host="app.diagrams.net" modified="2024-08-14T05:00:21.797Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36" etag="Yv240ipl5DuNrsrnl8SE" version="24.6.3" type="github">
   <diagram name="Page-1" id="fgbUA3F7tz_Lxha9GjpX">
-    <mxGraphModel dx="954" dy="618" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1887" dy="687" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -15,6 +15,93 @@
         </mxCell>
         <mxCell id="G8RLT8oxJdw4lPv8j2Pv-8" value="Acess Moisture Sensor&lt;div&gt;(Value)&lt;/div&gt;" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;" vertex="1" parent="1">
           <mxGeometry x="370" y="640" width="170" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="G8RLT8oxJdw4lPv8j2Pv-12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="G8RLT8oxJdw4lPv8j2Pv-9" target="G8RLT8oxJdw4lPv8j2Pv-11">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="G8RLT8oxJdw4lPv8j2Pv-35" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="G8RLT8oxJdw4lPv8j2Pv-9" target="G8RLT8oxJdw4lPv8j2Pv-7">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="690" y="845.2222222222222" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="700" y="845" />
+              <mxPoint x="700" y="555" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="G8RLT8oxJdw4lPv8j2Pv-9" value="If the sensorValue &amp;lt; threshold" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="390" y="800" width="150" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="G8RLT8oxJdw4lPv8j2Pv-16" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="G8RLT8oxJdw4lPv8j2Pv-11" target="G8RLT8oxJdw4lPv8j2Pv-15">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="259.92" y="1050" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="G8RLT8oxJdw4lPv8j2Pv-11" value="If chanceRain &amp;lt; 70%" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="215.07" y="880" width="130" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="G8RLT8oxJdw4lPv8j2Pv-13" value="Too dry" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="310" y="820" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="G8RLT8oxJdw4lPv8j2Pv-15" value="Turn on water solenoid" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;" vertex="1" parent="1">
+          <mxGeometry x="195.07" y="1100" width="170" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="G8RLT8oxJdw4lPv8j2Pv-34" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="G8RLT8oxJdw4lPv8j2Pv-17" target="G8RLT8oxJdw4lPv8j2Pv-9">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="G8RLT8oxJdw4lPv8j2Pv-17" value="Check moisture sensor" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;" vertex="1" parent="1">
+          <mxGeometry x="365" y="720" width="170" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="G8RLT8oxJdw4lPv8j2Pv-18" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" target="G8RLT8oxJdw4lPv8j2Pv-20" source="G8RLT8oxJdw4lPv8j2Pv-15">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="365.07" y="1190" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="G8RLT8oxJdw4lPv8j2Pv-19" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="G8RLT8oxJdw4lPv8j2Pv-20" target="G8RLT8oxJdw4lPv8j2Pv-21">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="G8RLT8oxJdw4lPv8j2Pv-28" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="G8RLT8oxJdw4lPv8j2Pv-20">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="105.07000000000001" y="1280" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="G8RLT8oxJdw4lPv8j2Pv-20" value="If minutes &amp;lt; runTime" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="195.07" y="1220" width="170" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="G8RLT8oxJdw4lPv8j2Pv-21" value="minutes = minutes +1" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;" vertex="1" parent="1">
+          <mxGeometry x="195.07" y="1390" width="170" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="G8RLT8oxJdw4lPv8j2Pv-22" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" target="G8RLT8oxJdw4lPv8j2Pv-23">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="280.07" y="1450" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="G8RLT8oxJdw4lPv8j2Pv-26" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="G8RLT8oxJdw4lPv8j2Pv-23">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="280.07" y="1190" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="280.07" y="1580" />
+              <mxPoint x="385.07" y="1580" />
+              <mxPoint x="385.07" y="1200" />
+              <mxPoint x="281.07" y="1200" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="G8RLT8oxJdw4lPv8j2Pv-23" value="wait 1 minute" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;" vertex="1" parent="1">
+          <mxGeometry x="195.07" y="1500" width="170" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="G8RLT8oxJdw4lPv8j2Pv-33" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="G8RLT8oxJdw4lPv8j2Pv-30" target="G8RLT8oxJdw4lPv8j2Pv-7">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="-140" y="1230" />
+              <mxPoint x="-140" y="555" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="G8RLT8oxJdw4lPv8j2Pv-30" value="Turn off water solenoid" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;" vertex="1" parent="1">
+          <mxGeometry x="-64.92999999999999" y="1260" width="170" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="G8RLT8oxJdw4lPv8j2Pv-36" value="Too wet" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="600" y="810" width="60" height="30" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
