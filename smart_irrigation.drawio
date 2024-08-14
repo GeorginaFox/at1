@@ -1,9 +1,21 @@
-<mxfile host="app.diagrams.net" modified="2024-08-14T04:27:36.153Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36" version="24.6.3" etag="KP9aE22bKQMf3Bp4tCPU" type="github">
+<mxfile host="app.diagrams.net" modified="2024-08-14T04:46:41.526Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36" etag="UGtpLZVy-ns10oSyrR7X" version="24.6.3" type="github">
   <diagram name="Page-1" id="fgbUA3F7tz_Lxha9GjpX">
-    <mxGraphModel>
+    <mxGraphModel dx="954" dy="618" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="G8RLT8oxJdw4lPv8j2Pv-1" value="User types the URL&lt;div&gt;192.0.0.0.8000&lt;/div&gt;" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.start_1;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="360" y="290" width="170" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="G8RLT8oxJdw4lPv8j2Pv-6" value="Set watering cycle&lt;div&gt;What days?&lt;/div&gt;&lt;div&gt;Time to start?&lt;/div&gt;&lt;div&gt;How long?&lt;/div&gt;" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;" vertex="1" parent="1">
+          <mxGeometry x="385" y="400" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="G8RLT8oxJdw4lPv8j2Pv-7" value="&lt;div&gt;Weather API&lt;/div&gt;&lt;div&gt;Tomorrow&lt;/div&gt;Load Chance of Rain (%)&lt;div&gt;Load How much rain (mm)&lt;/div&gt;&lt;div&gt;Long range&lt;/div&gt;&lt;div&gt;Load Chance of Rain (%)&lt;div&gt;Load How much rain (mm)&lt;/div&gt;&lt;/div&gt;" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;" vertex="1" parent="1">
+          <mxGeometry x="350" y="500" width="200" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="G8RLT8oxJdw4lPv8j2Pv-8" value="Acess Moisture Sensor&lt;div&gt;(Value)&lt;/div&gt;" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;" vertex="1" parent="1">
+          <mxGeometry x="370" y="640" width="170" height="60" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
