@@ -91,9 +91,6 @@
             <mxPoint x="1" as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="bdVUc4Eb2_AkQgpqR5im-22" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="bdVUc4Eb2_AkQgpqR5im-8" target="bdVUc4Eb2_AkQgpqR5im-9">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
         <mxCell id="bdVUc4Eb2_AkQgpqR5im-8" value="forcast_% &amp;gt; 75" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.decision;whiteSpace=wrap;" vertex="1" parent="1">
           <mxGeometry x="1021" y="430" width="220" height="100" as="geometry" />
         </mxCell>
